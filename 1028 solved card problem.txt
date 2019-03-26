@@ -1,0 +1,34 @@
+#include <bits/stdc++.h>
+#include <string>
+#include <algorithm>
+using namespace std;
+int main()
+{
+    int c;
+
+    cin>>c;
+    for(int i=0;i<c;i++)
+    {
+        int a, b, c;
+        int divident, divisor;
+        cin>>a>>b;
+        if(a>b)
+        {
+            divident=a;
+            divisor=b;
+        }
+        else{divident=b;
+        divisor=a;}
+        while(divident%divisor!=0)
+        {
+
+            c=divident%divisor;
+            divident=divisor;
+            divisor=c;
+
+        }
+        cout<<divisor<<endl;
+
+}
+  return 0;
+}

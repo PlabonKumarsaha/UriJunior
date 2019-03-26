@@ -1,0 +1,29 @@
+#include <iostream>
+#include<string>
+#include<algorithm>
+using namespace std;
+
+int main() {
+	string x,y;
+	int n;
+	cin>>n;
+	for(int i=0;i<n;i++)
+    {
+
+	cin>>x;
+	cin>>y;
+
+         reverse(x.begin(),x.end());
+         reverse(y.begin(),y.end());
+	int co=0;
+	for(int  i=0;i<min(x.size(),y.size());i++)
+	{
+		if(x[i]==y[i])
+		   co++;
+	}
+	if(co==y.size())
+	cout<<"encaixa\n";
+	else
+	cout<<"nao encaixa\n";
+    }
+}

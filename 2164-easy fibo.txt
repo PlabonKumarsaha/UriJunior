@@ -1,0 +1,19 @@
+#include <iostream>
+#include <stdio.h>
+#include <string>
+#include <math.h>
+using namespace std;
+int main()
+{
+double s,x,y;
+int a;
+cin>>a;
+x=(1+sqrt(5))/2;
+y=(1-sqrt(5))/2;
+s=(pow(x,a)-pow(y,a))/sqrt(5);
+printf("%.1lf\n",s);
+
+
+
+    return 0;
+}

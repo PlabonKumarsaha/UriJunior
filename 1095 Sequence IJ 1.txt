@@ -1,0 +1,15 @@
+#include <iostream>
+#include<stdio.h>
+using namespace std;
+int main()
+{
+    int i,j;
+
+    for(i=60,j=1;i>=0;i=i-5,j=j+3)
+    {
+
+cout<<"I="<<j<<" J="<<i<<endl;
+    }
+
+    return 0;
+}
